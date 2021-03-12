@@ -2,7 +2,7 @@ function hourGlass(arr) {
     // we could set this to 3 given the problems constraings, but this allows changes
     maxX = 3; // + (arr[0].length % 3)
     maxY = 3; // + (arr.length % 3)
-    total = -Infinity;  // has to be -64, but
+    total = -Infinity;  // has to be -64, but, you can also set to -63 as the lowest acceptable value 
    
     // begin at y == 0
     for (let y = 0; y <= maxY; y++) {
@@ -30,7 +30,7 @@ time complx: O(n*m)
 
 
 
-2nd solution: 
+2nd solution: using a Nested for loop to iterate across arr
 
 function hourGlass(arr) {
     let max = -63;
